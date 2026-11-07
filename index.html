@@ -1,24 +1,128 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru" class="no-js"
+  data-title-ru="OneTap Garage — инди-студия мобильных игр"
+  data-title-en="OneTap Garage — indie mobile games"
+  data-desc-ru="OneTap Garage — инди-студия мобильных игр. Наша первая игра Last Orbit — космический рогалик-шутер для Android, бесплатно в Google Play."
+  data-desc-en="OneTap Garage is an indie mobile game studio. Our first game Last Orbit is a roguelike space shooter for Android, free on Google Play.">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OneTap Garage</title>
-<style>
-  :root { --bg: #f6f7fb; --fg: #161a26; --muted: #5a6275; --accent: #2276d6; color-scheme: light; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #070912; --fg: #e6ebf7; --muted: #9aa4bb; --accent: #6fc3ff; color-scheme: dark; } }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
-  main { max-width: 640px; margin: 0 auto; padding: 48px max(16px, env(safe-area-inset-right)) 48px max(16px, env(safe-area-inset-left)); }
-  h1 { margin: 0 0 4px; } p { color: var(--muted); } a { color: var(--accent); }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>(function(){var l,d=document.documentElement;try{l=localStorage.getItem('lo-lang')}catch(e){}var q=/[?&]lang=(ru|en)\b/.exec(location.search);if(q)l=q[1];if(l!=='ru'&&l!=='en'){var n=(navigator.languages&&navigator.languages[0])||navigator.language||'ru';l=/^(ru|be|kk)\b/i.test(n)?'ru':'en'}d.lang=l;var t=d.getAttribute('data-title-'+l);if(t)document.title=t})();</script>
+<title>OneTap Garage — инди-студия мобильных игр</title>
+<meta name="description" content="OneTap Garage — инди-студия мобильных игр. Наша первая игра Last Orbit — космический рогалик-шутер для Android, бесплатно в Google Play.">
+<link rel="canonical" href="https://trueanimal-art.github.io/">
+<link rel="alternate" hreflang="ru" href="https://trueanimal-art.github.io/">
+<link rel="alternate" hreflang="en" href="https://trueanimal-art.github.io/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://trueanimal-art.github.io/">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#05060d">
+<link rel="icon" href="last-orbit/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="last-orbit/img/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OneTap Garage">
+<meta property="og:url" content="https://trueanimal-art.github.io/">
+<meta property="og:title" content="OneTap Garage — инди-студия мобильных игр">
+<meta property="og:description" content="Наша первая игра Last Orbit — бесплатный космический рогалик-шутер для Android. Пушки стреляют сами, ты собираешь билд.">
+<meta property="og:image" content="https://trueanimal-art.github.io/last-orbit/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OneTap Garage — indie mobile games">
+<meta name="twitter:description" content="Our first game Last Orbit: a free roguelike space shooter for Android. Guns fire on their own, you shape the build.">
+<meta property="og:image:alt" content="Last Orbit: Страж против Солнечного Феникса">
+<meta name="twitter:image:alt" content="Last Orbit: the Warden versus the Solar Phoenix">
+<meta name="twitter:image" content="https://trueanimal-art.github.io/last-orbit/img/og.jpg">
+<link rel="preload" href="assets/fonts/orbitron-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "OneTap Garage",
+  "url": "https://trueanimal-art.github.io/",
+  "logo": "https://trueanimal-art.github.io/last-orbit/img/icon-192.png",
+  "email": "onetapgaragestudio@gmail.com",
+  "contactPoint": { "@type": "ContactPoint", "email": "onetapgaragestudio@gmail.com", "contactType": "customer support", "availableLanguage": ["Russian", "English"] }
+}
+</script>
 </head>
-<body>
-<main>
-  <h1>OneTap Garage</h1>
-  <p>Indie games.</p>
-  <h2>Last Orbit</h2>
-  <p><a href="last-orbit/privacy/">Privacy policy / Политика конфиденциальности</a></p>
-  <p>Contact: <a href="mailto:onetapgaragestudio@gmail.com">onetapgaragestudio@gmail.com</a></p>
+<body id="top">
+<a class="skip" href="#main"><span class="ru">К содержимому</span><span class="en">Skip to content</span></a>
+<div class="nebula" aria-hidden="true"></div>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<header class="top">
+  <a class="brand" href="#top"><span>ONETAP <b>GARAGE</b></span></a>
+  <div class="tools">
+    <div class="lang" role="group" aria-label="Language / Язык">
+      <button type="button" data-lang="ru" lang="ru" aria-pressed="true" title="Русский">RU</button>
+      <button type="button" data-lang="en" lang="en" aria-pressed="false" title="English">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="studio-hero" aria-labelledby="studio-title">
+  <i class="orbit-ring" aria-hidden="true"></i>
+  <p class="kick rv"><span class="ru">Инди-студия мобильных игр</span><span class="en">Indie mobile game studio</span></p>
+  <h1 class="wordmark rv" id="studio-title"><span>ONETAP</span>GARAGE</h1>
+  <p class="lead rv"><span class="ru">Last Orbit — наша первая игра. Бесплатно на Android, обновления и новые режимы в планах.</span><span class="en">Last Orbit is our first game, free on Android. Updates and new modes are on the way.</span></p>
+</section>
+
+<section class="sec" style="padding-top:40px" aria-labelledby="h-lo">
+  <article class="gcard hud rv">
+    <a class="gcard-art" href="last-orbit/" tabindex="-1" aria-hidden="true">
+      <picture>
+        <source media="(min-aspect-ratio: 5/4)" srcset="last-orbit/img/hero-wide.webp">
+        <img src="last-orbit/img/hero-mobile.webp" width="1060" height="887" decoding="async" alt="">
+      </picture>
+      <span class="logo"><span class="l1">LAST</span><span class="l2" data-text="ORBIT">ORBIT</span></span>
+    </a>
+    <div class="gcard-body">
+      <p class="kick"><span class="ru">Наша игра</span><span class="en">Our game</span></p>
+      <h2 id="h-lo">Last Orbit</h2>
+      <p><span class="ru">Космический рогалик-шутер для Android. Ты — Страж, боевой робот на последней орбите: защити ядро станции от орд пришельцев. Пушки стреляют сами, а ты выбираешь улучшения и собираешь билд.</span><span class="en">A roguelike space shooter for Android. You are the Warden, a battle robot on the last orbit: defend the station core against alien hordes. Your guns fire on their own; you pick upgrades and shape your build.</span></p>
+      <ul class="ticks">
+        <li class="chip" style="--c:#7ff6ff"><i></i><span class="ru">9 пушек</span><span class="en">9 guns</span></li>
+        <li class="chip" style="--c:#ffb238"><i></i><span class="ru">100 уровней</span><span class="en">100 levels</span></li>
+        <li class="chip" style="--c:#ff5a8a"><i></i><span class="ru">23 босса</span><span class="en">23 bosses</span></li>
+        <li class="chip" style="--c:#5aff9b"><i></i><span class="ru">Бесплатно</span><span class="en">Free</span></li>
+      </ul>
+      <div class="cta">
+        <a class="btn-ghost" href="last-orbit/"><span class="ru">Об игре</span><span class="en">About the game</span> →</a>
+        <a class="gp" href="https://play.google.com/store/apps/details?id=com.onetapgarage.lastorbit" rel="noopener"><img class="ru" src="last-orbit/img/gp-ru.png" width="646" height="250" loading="lazy" alt="Доступно в Google Play"><img class="en" src="last-orbit/img/gp-en.png" width="646" height="250" loading="lazy" alt="Get it on Google Play"></a>
+      </div>
+      <p class="note"><span class="ru"><b>Бесплатно</b> · без покупок · реклама между уровнями · играй без интернета · Android 7.0+</span><span class="en"><b>Free</b> · no purchases · ads between levels · plays offline · Android 7.0+</span></p>
+    </div>
+  </article>
+</section>
+
+<section class="sec contact" id="contact" aria-labelledby="h-contact">
+  <div class="wrap rv">
+    <p class="kick"><span class="ru">Связь</span><span class="en">Contact</span></p>
+    <h2 class="h2" id="h-contact"><span class="ru">Напишите нам</span><span class="en">Get in touch</span></h2>
+    <p class="lead" style="margin-left:auto;margin-right:auto"><span class="ru">Вопросы по игре, предложения и запросы по данным.</span><span class="en">Questions about the game, feedback and data requests.</span></p>
+    <a class="mail" href="mailto:onetapgaragestudio@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>onetapgaragestudio@gmail.com</a>
+  </div>
+</section>
 </main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-brand">
+      <div><div class="wm">ONETAP GARAGE</div><small><span class="ru">Инди-студия мобильных игр</span><span class="en">Indie mobile games</span></small></div>
+    </div>
+    <nav class="foot-links" aria-label="Links">
+      <a href="last-orbit/">Last Orbit</a>
+      <a href="last-orbit/privacy/"><span class="ru">Политика конфиденциальности Last Orbit</span><span class="en">Last Orbit privacy policy</span></a>
+      <a href="mailto:onetapgaragestudio@gmail.com">onetapgaragestudio@gmail.com</a>
+    </nav>
+    <p class="legal">© 2026 OneTap Garage. <span class="ru">Google Play и логотип Google Play — товарные знаки Google LLC.</span><span class="en">Google Play and the Google Play logo are trademarks of Google LLC.</span></p>
+  </div>
+</footer>
+<script src="assets/site.js" defer></script>
 </body>
 </html>

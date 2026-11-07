@@ -1,0 +1,13 @@
+{
+  "name": "Last Orbit — OneTap Garage",
+  "short_name": "Last Orbit",
+  "start_url": "/last-orbit/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#05060d",
+  "theme_color": "#05060d",
+  "icons": [
+    { "src": "/last-orbit/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/last-orbit/img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

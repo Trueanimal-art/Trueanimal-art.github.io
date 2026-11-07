@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="ru" class="no-js"
+  data-title-ru="LAST ORBIT — космический рогалик-шутер для Android"
+  data-title-en="LAST ORBIT — roguelike space shooter for Android"
+  data-desc-ru="Last Orbit — бесплатный космический рогалик-шутер для Android 7.0+. Пушки стреляют сами, ты собираешь билд: 9 пушек, 100 уровней, 23 босса, хардкор, бесконечный режим и ежедневный забег. Играй без интернета."
+  data-desc-en="Last Orbit is a free roguelike space shooter for Android 7.0+. Guns fire on their own, you shape the build: 9 guns, 100 levels, 23 bosses, hardcore, endless mode and a daily run. Plays offline.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>(function(){var l,d=document.documentElement;try{l=localStorage.getItem('lo-lang')}catch(e){}var q=/[?&]lang=(ru|en)\b/.exec(location.search);if(q)l=q[1];if(l!=='ru'&&l!=='en'){var n=(navigator.languages&&navigator.languages[0])||navigator.language||'ru';l=/^(ru|be|kk)\b/i.test(n)?'ru':'en'}d.lang=l;var t=d.getAttribute('data-title-'+l);if(t)document.title=t})();</script>
+<title>LAST ORBIT — космический рогалик-шутер для Android</title>
+<meta name="description" content="Last Orbit — бесплатный космический рогалик-шутер для Android 7.0+. Пушки стреляют сами, ты собираешь билд: 9 пушек, 100 уровней, 23 босса, хардкор, бесконечный режим и ежедневный забег. Играй без интернета.">
+<link rel="canonical" href="https://trueanimal-art.github.io/last-orbit/">
+<link rel="alternate" hreflang="ru" href="https://trueanimal-art.github.io/last-orbit/">
+<link rel="alternate" hreflang="en" href="https://trueanimal-art.github.io/last-orbit/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://trueanimal-art.github.io/last-orbit/">
+<meta name="theme-color" content="#05060d">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="img/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OneTap Garage">
+<meta property="og:url" content="https://trueanimal-art.github.io/last-orbit/">
+<meta property="og:title" content="LAST ORBIT — космический рогалик-шутер для Android">
+<meta property="og:description" content="Бесплатный космический рогалик-шутер для Android. Пушки стреляют сами, ты собираешь билд: 9 пушек, 100 уровней, 23 босса. Играй без интернета.">
+<meta property="og:image" content="https://trueanimal-art.github.io/last-orbit/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Last Orbit: Страж против Солнечного Феникса">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LAST ORBIT — roguelike space shooter for Android">
+<meta name="twitter:description" content="Free roguelike space shooter for Android. Guns fire on their own, you shape the build: 9 guns, 100 levels, 23 bosses. Plays offline.">
+<meta name="twitter:image" content="https://trueanimal-art.github.io/last-orbit/img/og.jpg">
+<meta name="twitter:image:alt" content="Last Orbit: the Warden versus the Solar Phoenix">
+<link rel="preload" href="../assets/fonts/orbitron-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Last Orbit",
+  "url": "https://trueanimal-art.github.io/last-orbit/",
+  "image": "https://trueanimal-art.github.io/last-orbit/img/og.jpg",
+  "description": "A free roguelike space shooter for Android: hold the last orbit against alien hordes. Your guns fire on their own; you pick upgrades and shape your build. 9 guns, 100 levels in 10 sectors, 23 bosses. Plays offline.",
+  "genre": ["Action", "Roguelike", "Shooter"],
+  "gamePlatform": "Android",
+  "operatingSystem": "Android 7.0+",
+  "applicationCategory": "GameApplication",
+  "playMode": "SinglePlayer",
+  "fileSize": "48MB",
+  "inLanguage": ["ru", "en"],
+  "installUrl": "https://play.google.com/store/apps/details?id=com.onetapgarage.lastorbit",
+  "sameAs": ["https://play.google.com/store/apps/details?id=com.onetapgarage.lastorbit"],
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "url": "https://play.google.com/store/apps/details?id=com.onetapgarage.lastorbit" },
+  "author": { "@type": "Organization", "name": "OneTap Garage", "url": "https://trueanimal-art.github.io/", "email": "onetapgaragestudio@gmail.com" },
+  "publisher": { "@type": "Organization", "name": "OneTap Garage", "url": "https://trueanimal-art.github.io/" }
+}
+</script>
+</head>
+<body id="top">
+<a class="skip" href="#main"><span class="ru">К содержимому</span><span class="en">Skip to content</span></a>
+<div class="nebula" aria-hidden="true"></div>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<header class="top">
+  <a class="brand" href="#top"><img src="img/icon-256.webp" width="34" height="34" alt=""><span>LAST <b>ORBIT</b></span></a>
+  <nav class="nav" aria-label="Sections">
+    <a href="#trailer"><span class="ru">Трейлер</span><span class="en">Trailer</span></a>
+    <a href="#screens"><span class="ru">Скриншоты</span><span class="en">Screens</span></a>
+    <a href="#arsenal"><span class="ru">Арсенал</span><span class="en">Arsenal</span></a>
+    <a href="#bosses"><span class="ru">Боссы</span><span class="en">Bosses</span></a>
+  </nav>
+  <div class="tools">
+    <button class="snd" type="button" aria-pressed="false" data-src="img/music.mp3" aria-label="Музыка игры" data-label-ru="Музыка игры" data-label-en="Game music">
+      <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="m23 9-6 6M17 9l6 6"/></svg>
+      <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+    </button>
+    <div class="lang" role="group" aria-label="Language / Язык">
+      <button type="button" data-lang="ru" lang="ru" aria-pressed="true" title="Русский">RU</button>
+      <button type="button" data-lang="en" lang="en" aria-pressed="false" title="English">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="game-title">
+  <div class="hero-art">
+    <picture>
+      <source media="(min-aspect-ratio: 5/4)" srcset="img/hero-wide.webp" width="1774" height="887">
+      <img src="img/hero-mobile.webp" width="1060" height="887" fetchpriority="high" decoding="async"
+        alt="Страж стреляет в Солнечного Феникса с орбитальной станции" data-alt-ru="Страж стреляет в Солнечного Феникса с орбитальной станции" data-alt-en="The Warden fires at the Solar Phoenix from the orbital station">
+    </picture>
+  </div>
+  <canvas class="embers" aria-hidden="true"></canvas>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <i class="hud-corner a" aria-hidden="true"></i><i class="hud-corner b" aria-hidden="true"></i><i class="hud-corner c" aria-hidden="true"></i><i class="hud-corner d" aria-hidden="true"></i>
+  <div class="hero-in">
+    <div class="hero-top">
+      <p class="kick"><span class="ru">Космический рогалик-шутер<span class="kx"> · Android</span></span><span class="en">Roguelike space shooter<span class="kx"> · Android</span></span></p>
+      <h1 class="logo anim" id="game-title"><span class="l1">LAST</span> <span class="l2" data-text="ORBIT">ORBIT</span></h1>
+      <p class="tagpill"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10v2h4v3a5 5 0 0 1-4.6 5 5 5 0 0 1-3.4 2.9V18h3v2H8v-2h3v-3.1A5 5 0 0 1 7.6 12 5 5 0 0 1 3 7V4h4V2zm0 4H5v1a3 3 0 0 0 2 2.8V6zm10 0v3.8A3 3 0 0 0 19 7V6h-2z"/></svg><span class="ru">Удержи последнюю орбиту</span><span class="en">Hold the last orbit</span></p>
+      <p class="promise"><span class="ru">Пушки стреляют сами.<br>Ты собираешь билд.</span><span class="en">Guns fire on their own.<br>You shape the build.</span></p>
+    </div>
+    <p class="hero-lead">
+      <span class="ru">Ты — Страж, боевой робот на краю обороны. Защити ядро станции от орд пришельцев: выбирай улучшения, собирай свой билд и побеждай боссов.</span>
+      <span class="en">You are the Warden, a battle robot on the edge of the defense line. Defend the station core against alien hordes: pick upgrades, shape your build and beat the bosses.</span>
+    </p>
+    <div class="hero-bot">
+      <div class="cta">
+        <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.onetapgarage.lastorbit" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l15-8.5z"/></svg><span class="ru">Установить из Google Play</span><span class="en">Install on Google Play</span></a>
+        <a class="gp" href="https://play.google.com/store/apps/details?id=com.onetapgarage.lastorbit" rel="noopener"><img class="ru" src="img/gp-ru.png" width="646" height="250" loading="lazy" alt="Доступно в Google Play"><img class="en" src="img/gp-en.png" width="646" height="250" loading="lazy" alt="Get it on Google Play"></a>
+      </div>
+      <p class="note"><span class="ru"><b>Бесплатно</b> · без покупок · реклама между уровнями · играй без интернета · Android 7.0+</span><span class="en"><b>Free</b> · no purchases · ads between levels · plays offline · Android 7.0+</span></p>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <ul class="rv">
+    <li class="stat" style="--c:#7ff6ff"><b data-count="9">9</b><span><span class="ru">пушек</span><span class="en">guns</span></span></li>
+    <li class="stat" style="--c:#ffb238"><b data-count="100">100</b><span><span class="ru">уровней</span><span class="en">levels</span></span></li>
+    <li class="stat" style="--c:#b04dff"><b data-count="10">10</b><span><span class="ru">секторов</span><span class="en">sectors</span></span></li>
+    <li class="stat" style="--c:#ff5a8a"><b data-count="23">23</b><span><span class="ru">босса</span><span class="en">bosses</span></span></li>
+  </ul>
+  <ol class="how30 rv" aria-label="Как играть за 30 секунд" data-label-ru="Как играть за 30 секунд" data-label-en="How to play in 30 seconds">
+    <li class="h30-t"><span class="ru">Как играть за 30 секунд</span><span class="en">How to play in 30 seconds</span></li>
+    <li><b>1</b><span class="ru">Веди Стража пальцем</span><span class="en">Drag to steer the Warden</span></li>
+    <li><b>2</b><span class="ru">Выбирай 1 из 3 карт</span><span class="en">Pick 1 of 3 cards</span></li>
+    <li><b>3</b><span class="ru">Побеждай боссов</span><span class="en">Beat the bosses</span></li>
+  </ol>
+</div>
+
+<section class="sec" id="trailer" aria-labelledby="h-trailer">
+  <div class="wrap">
+    <div class="head c rv">
+      <p class="kick"><span class="ru">Смотреть</span><span class="en">Watch</span></p>
+      <h2 class="h2" id="h-trailer"><span class="ru">Трейлер</span><span class="en">Trailer</span></h2>
+    </div>
+    <div class="video hud rv" data-yt-ru="gi_K1wrUXoY" data-yt-en="JmzXaTvoeI8">
+      <button type="button" aria-label="Смотреть трейлер на YouTube" data-label-ru="Смотреть трейлер на YouTube" data-label-en="Watch the trailer on YouTube">
+        <img src="img/poster-ru.webp" data-src-ru="img/poster-ru.webp" data-src-en="img/poster-en.webp" width="1280" height="720" loading="lazy" decoding="async" alt="">
+        <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 3.5v17l15-8.5z"/></svg></span>
+        <span class="vlabel" aria-hidden="true">LAST ORBIT · <span class="ru">трейлер</span><span class="en">trailer</span><small><span class="ru">Видео загрузится с YouTube после нажатия</span><span class="en">The video loads from YouTube when you tap</span></small></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="screens" aria-labelledby="h-screens">
+  <div class="sec-bg" aria-hidden="true"><img src="img/bg-s9.webp" width="1280" height="720" loading="lazy" decoding="async" alt=""></div>
+  <div class="wrap">
+    <div class="head c rv">
+      <p class="kick"><span class="ru">Скриншоты</span><span class="en">Screenshots</span></p>
+      <h2 class="h2" id="h-screens"><span class="ru">Прямо из игры</span><span class="en">Straight from the game</span></h2>
+    </div>
+  </div>
+  <div class="car rv">
+    <button class="car-btn prev" type="button" aria-label="Назад" data-label-ru="Назад" data-label-en="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button>
+    <div class="car-track" tabindex="0" role="region" aria-label="Скриншоты" data-label-ru="Скриншоты" data-label-en="Screenshots">
+      <figure class="slide"><div class="phone"><img src="img/shots/ru/01_bosses.webp" data-src="img/shots/{l}/01_bosses.webp" width="540" height="960" loading="lazy" decoding="async" alt="Скриншот: 23 эпичных босса" data-alt-ru="Скриншот: 23 эпичных босса" data-alt-en="Screenshot: 23 epic bosses"></div></figure>
+      <figure class="slide"><div class="phone"><img src="img/shots/ru/02_core.webp" data-src="img/shots/{l}/02_core.webp" width="540" height="960" loading="lazy" decoding="async" alt="Скриншот: Защити ядро" data-alt-ru="Скриншот: Защити ядро" data-alt-en="Screenshot: Defend the core"></div></figure>
+      <figure class="slide"><div class="phone"><img src="img/shots/ru/03_auto.webp" data-src="img/shots/{l}/03_auto.webp" width="540" height="960" loading="lazy" decoding="async" alt="Скриншот: Пушки стреляют сами" data-alt-ru="Скриншот: Пушки стреляют сами" data-alt-en="Screenshot: Guns fire on their own"></div></figure>
+      <figure class="slide"><div class="phone"><img src="img/shots/ru/04_build.webp" data-src="img/shots/{l}/04_build.webp" width="540" height="960" loading="lazy" decoding="async" alt="Скриншот: Собери свой билд" data-alt-ru="Скриншот: Собери свой билд" data-alt-en="Screenshot: Draft your build"></div></figure>
+      <figure class="slide"><div class="phone"><img src="img/shots/ru/05_synergy.webp" data-src="img/shots/{l}/05_synergy.webp" width="540" height="960" loading="lazy" decoding="async" alt="Скриншот: Синергии и эволюции" data-alt-ru="Скриншот: Синергии и эволюции" data-alt-en="Screenshot: Synergies and evolutions"></div></figure>
+      <figure class="slide"><div class="phone"><img src="img/shots/ru/06_levels.webp" data-src="img/shots/{l}/06_levels.webp" width="540" height="960" loading="lazy" decoding="async" alt="Скриншот: 100 уровней" data-alt-ru="Скриншот: 100 уровней" data-alt-en="Screenshot: 100 levels"></div></figure>
+      <figure class="slide"><div class="phone"><img src="img/shots/ru/07_warden.webp" data-src="img/shots/{l}/07_warden.webp" width="540" height="960" loading="lazy" decoding="async" alt="Скриншот: Прокачай арсенал" data-alt-ru="Скриншот: Прокачай арсенал" data-alt-en="Screenshot: Upgrade your arsenal"></div></figure>
+      <figure class="slide"><div class="phone"><img src="img/shots/ru/08_horde.webp" data-src="img/shots/{l}/08_horde.webp" width="540" height="960" loading="lazy" decoding="async" alt="Скриншот: Last Orbit, космический шутер" data-alt-ru="Скриншот: Last Orbit, космический шутер" data-alt-en="Screenshot: Last Orbit, space shooter"></div></figure>
+    </div>
+    <button class="car-btn next" type="button" aria-label="Вперёд" data-label-ru="Вперёд" data-label-en="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+    <div class="dots"></div>
+  </div>
+</section>
+
+<section class="sec" id="arsenal" aria-labelledby="h-arsenal">
+  <div class="sec-bg" aria-hidden="true"><img src="img/bg-s2.webp" width="1280" height="720" loading="lazy" decoding="async" alt=""></div>
+  <div class="wrap">
+    <div class="head c rv">
+      <p class="kick"><span class="ru">Арсенал</span><span class="en">Arsenal</span></p>
+      <h2 class="h2" id="h-arsenal"><span class="ru">9 пушек.<br>Твой билд.</span><span class="en">9 guns.<br>Your build.</span></h2>
+      <p class="lead"><span class="ru">Лазер, рельсотрон, тесла, ракеты, крио, гравитация и другие. С каждым уровнем выбирай одну из трёх карт: новая пушка или улучшение.</span><span class="en">Laser, railgun, tesla, missiles, cryo, gravity and more. Every level-up, pick one of three cards: a new gun or an upgrade.</span></p>
+    </div>
+    <ul class="guns rv">
+      <li class="gun" style="--c:#ffb238;--i:0"><div class="gi"><img src="img/guns/laser.webp" width="126" height="240" loading="lazy" decoding="async" alt=""></div><span><span class="ru">Лазер</span><span class="en">Laser</span></span></li>
+      <li class="gun" style="--c:#5aff9b;--i:1"><div class="gi"><img src="img/guns/rail.webp" width="97" height="240" loading="lazy" decoding="async" alt=""></div><span><span class="ru">Рельсотрон</span><span class="en">Railgun</span></span></li>
+      <li class="gun" style="--c:#9a7bff;--i:2"><div class="gi"><img src="img/guns/tesla.webp" width="110" height="240" loading="lazy" decoding="async" alt=""></div><span><span class="ru">Тесла</span><span class="en">Tesla</span></span></li>
+      <li class="gun" style="--c:#ff5a5a;--i:3"><div class="gi"><img src="img/guns/missile.webp" width="126" height="240" loading="lazy" decoding="async" alt=""></div><span><span class="ru">Ракеты</span><span class="en">Missiles</span></span></li>
+      <li class="gun" style="--c:#7ff6ff;--i:4"><div class="gi"><img src="img/guns/cryo.webp" width="103" height="240" loading="lazy" decoding="async" alt=""></div><span><span class="ru">Крио</span><span class="en">Cryo</span></span></li>
+      <li class="gun" style="--c:#d35aff;--i:5"><div class="gi"><img src="img/guns/gravity.webp" width="116" height="240" loading="lazy" decoding="async" alt=""></div><span><span class="ru">Гравитация</span><span class="en">Gravity</span></span></li>
+      <li class="gun" style="--c:#ffa04a;--i:6"><div class="gi"><img src="img/guns/flak.webp" width="137" height="240" loading="lazy" decoding="async" alt=""></div><span><span class="ru">Шрапнель</span><span class="en">Flak</span></span></li>
+      <li class="gun" style="--c:#3ff0d0;--i:7"><div class="gi"><img src="img/guns/drone.webp" width="145" height="240" loading="lazy" decoding="async" alt=""></div><span><span class="ru">Дроны</span><span class="en">Drones</span></span></li>
+      <li class="gun" style="--c:#ff2d55;--i:8"><div class="gi"><img src="img/guns/orbital.webp" width="117" height="240" loading="lazy" decoding="async" alt=""></div><span><span class="ru">Орбитальный удар</span><span class="en">Orbital strike</span></span></li>
+    </ul>
+    <div class="syn rv">
+      <span class="chip" style="--c:#b04dff"><i></i><span class="ru">Синергии и эволюции оружия</span><span class="en">Weapon synergies and evolutions</span></span>
+      <span class="chip" style="--c:#ffb238"><i></i><span class="ru">Каждый бой — новая сборка</span><span class="en">A new build every run</span></span>
+      <span class="chip" style="--c:#ff5a8a"><i></i><span class="ru">Подбирай пушки под босса</span><span class="en">Pick guns that fit the foe</span></span>
+    </div>
+  </div>
+</section>
+
+<section class="sec bosses" id="bosses" aria-labelledby="h-bosses">
+  <div class="sec-bg" aria-hidden="true"><img src="img/bg-s5.webp" width="1280" height="720" loading="lazy" decoding="async" alt=""></div>
+  <div class="wrap">
+    <figure class="boss-hero rv">
+      <img src="img/phoenix-big.webp" width="512" height="512" loading="lazy" decoding="async" alt="Солнечный Феникс" data-alt-ru="Солнечный Феникс" data-alt-en="The Solar Phoenix">
+      <figcaption><span class="ru">Солнечный Феникс</span><span class="en">The Solar Phoenix</span></figcaption>
+    </figure>
+    <div class="rv">
+      <p class="kick" style="color:#ff8a5a"><span class="ru">Боссы</span><span class="en">Bosses</span></p>
+      <div class="big23"><b>23</b><h2 class="h2 fire" id="h-bosses"><span class="ru">эпичных<br>босса</span><span class="en">unique<br>bosses</span></h2></div>
+      <p class="lead"><span class="ru">От Пасти Разлома до финального Сердца Звезды. У каждого босса свои механики и слабость к своему типу урона: подбирай пушки под противника.</span><span class="en">From the Rift Maw to the final Star Heart. Every boss has its own mechanics and a weakness to one damage type: pick guns that fit the foe.</span></p>
+    </div>
+  </div>
+  <div class="mq" style="--t:80s"><ul class="mq-track">
+    <li class="boss"><img src="img/bosses/riftMaw.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Пасть Разлома</span><span class="en">Rift Maw</span></span></li>
+    <li class="boss"><img src="img/bosses/queen.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Королева Роя</span><span class="en">Swarm Queen</span></span></li>
+    <li class="boss"><img src="img/bosses/seraph.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Осколочный Серафим</span><span class="en">Shard Seraph</span></span></li>
+    <li class="boss"><img src="img/bosses/starLeech.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Звездоед</span><span class="en">Star Leech</span></span></li>
+    <li class="boss"><img src="img/bosses/colossus.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Обсидиановый Колосс</span><span class="en">Obsidian Colossus</span></span></li>
+    <li class="boss"><img src="img/bosses/weaver.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Ткач Пустоты</span><span class="en">Void Weaver</span></span></li>
+    <li class="boss"><img src="img/bosses/chrono.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Хроностраж</span><span class="en">Chrono Sentinel</span></span></li>
+    <li class="boss"><img src="img/bosses/carrier.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Носитель</span><span class="en">Dread Carrier</span></span></li>
+    <li class="boss"><img src="img/bosses/phantom.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Зеркальный Фантом</span><span class="en">Mirror Phantom</span></span></li>
+    <li class="boss"><img src="img/bosses/neuro.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Нейромант</span><span class="en">Neuromancer</span></span></li>
+    <li class="boss"><img src="img/bosses/leviathan.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Ледяной Левиафан</span><span class="en">Frost Leviathan</span></span></li>
+    <li class="boss"><img src="img/bosses/singularity.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Сингулярность</span><span class="en">Singularity</span></span></li>
+  </ul></div>
+  <div class="mq rev" style="--t:74s"><ul class="mq-track">
+    <li class="boss"><img src="img/bosses/storm.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Грозовой Титан</span><span class="en">Storm Titan</span></span></li>
+    <li class="boss"><img src="img/bosses/plague.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Чумной Чревоносец</span><span class="en">Plague Broodmother</span></span></li>
+    <li class="boss"><img src="img/bosses/spider.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Осадный Паук</span><span class="en">Siege Spider</span></span></li>
+    <li class="boss"><img src="img/bosses/phoenix.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Солнечный Феникс</span><span class="en">Solar Phoenix</span></span></li>
+    <li class="boss"><img src="img/bosses/reaper.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Жнец Пустоты</span><span class="en">Void Reaper</span></span></li>
+    <li class="boss"><img src="img/bosses/architect.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Архитектор</span><span class="en">Architect</span></span></li>
+    <li class="boss"><img src="img/bosses/forge.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Горн-Колосс</span><span class="en">Forge Colossus</span></span></li>
+    <li class="boss"><img src="img/bosses/flagship.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Флагман-Призрак</span><span class="en">Ghost Flagship</span></span></li>
+    <li class="boss"><img src="img/bosses/lens.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Гравилинза</span><span class="en">Gravity Lens</span></span></li>
+    <li class="boss"><img src="img/bosses/shade.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Зеркальная Тень</span><span class="en">Mirror Shade</span></span></li>
+    <li class="boss final"><img src="img/bosses/starheart.webp" width="220" height="220" loading="lazy" decoding="async" alt=""><span class="bn"><span class="ru">Сердце Звезды</span><span class="en">Star Heart</span></span></li>
+  </ul></div>
+  <div class="midcta rv">
+    <div class="cta">
+        <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.onetapgarage.lastorbit" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l15-8.5z"/></svg><span class="ru">Установить из Google Play</span><span class="en">Install on Google Play</span></a>
+        <a class="gp" href="https://play.google.com/store/apps/details?id=com.onetapgarage.lastorbit" rel="noopener"><img class="ru" src="img/gp-ru.png" width="646" height="250" loading="lazy" alt="Доступно в Google Play"><img class="en" src="img/gp-en.png" width="646" height="250" loading="lazy" alt="Get it on Google Play"></a>
+      </div>
+      <p class="note"><span class="ru"><b>Бесплатно</b> · без покупок · реклама между уровнями · играй без интернета · Android 7.0+</span><span class="en"><b>Free</b> · no purchases · ads between levels · plays offline · Android 7.0+</span></p>
+  </div>
+</section>
+
+<section class="sec" id="sectors" aria-labelledby="h-sectors">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="kick" style="color:#c99bff"><span class="ru">Кампания</span><span class="en">Campaign</span></p>
+      <h2 class="h2 violet" id="h-sectors"><span class="ru">100&nbsp;уровней · 10&nbsp;секторов</span><span class="en">100&nbsp;levels · 10&nbsp;sectors</span></h2>
+      <p class="lead"><span class="ru">Свои правила, элитные враги и космическая погода в каждом секторе. Между боями прокачивай таланты и ядро станции, собирай чипы, открывай оружие и облики Стража.</span><span class="en">Every sector brings its own rule, elite enemies and space weather. Between fights, upgrade talents and the station core, collect chips, unlock weapons and Warden skins.</span></p>
+    </div>
+    <ul class="sectors rv">
+      <li class="sector"><img src="img/sectors/s1.webp" width="480" height="270" loading="lazy" decoding="async" alt=""><small><span class="ru">Сектор</span><span class="en">Sector</span></small><b>01</b></li>
+      <li class="sector"><img src="img/sectors/s2.webp" width="480" height="270" loading="lazy" decoding="async" alt=""><small><span class="ru">Сектор</span><span class="en">Sector</span></small><b>02</b></li>
+      <li class="sector"><img src="img/sectors/s3.webp" width="480" height="270" loading="lazy" decoding="async" alt=""><small><span class="ru">Сектор</span><span class="en">Sector</span></small><b>03</b></li>
+      <li class="sector"><img src="img/sectors/s4.webp" width="480" height="270" loading="lazy" decoding="async" alt=""><small><span class="ru">Сектор</span><span class="en">Sector</span></small><b>04</b></li>
+      <li class="sector"><img src="img/sectors/s5.webp" width="480" height="270" loading="lazy" decoding="async" alt=""><small><span class="ru">Сектор</span><span class="en">Sector</span></small><b>05</b></li>
+      <li class="sector"><img src="img/sectors/s6.webp" width="480" height="270" loading="lazy" decoding="async" alt=""><small><span class="ru">Сектор</span><span class="en">Sector</span></small><b>06</b></li>
+      <li class="sector"><img src="img/sectors/s7.webp" width="480" height="270" loading="lazy" decoding="async" alt=""><small><span class="ru">Сектор</span><span class="en">Sector</span></small><b>07</b></li>
+      <li class="sector"><img src="img/sectors/s8.webp" width="480" height="270" loading="lazy" decoding="async" alt=""><small><span class="ru">Сектор</span><span class="en">Sector</span></small><b>08</b></li>
+      <li class="sector"><img src="img/sectors/s9.webp" width="480" height="270" loading="lazy" decoding="async" alt=""><small><span class="ru">Сектор</span><span class="en">Sector</span></small><b>09</b></li>
+      <li class="sector"><img src="img/sectors/s10.webp" width="480" height="270" loading="lazy" decoding="async" alt=""><small><span class="ru">Сектор</span><span class="en">Sector</span></small><b>10</b></li>
+    </ul>
+    <div class="modes">
+      <div class="mode rv" style="--c:#ff3fd1"><i class="ic" style="--n:9;--c:#ff5a5a" aria-hidden="true"></i><div><h3><span class="ru">Хардкор</span><span class="en">Hardcore</span></h3><p><span class="ru">Кампания для тех, кому мало.</span><span class="en">The campaign, turned up.</span></p></div></div>
+      <div class="mode rv" style="--c:#b04dff;--dl:.08s"><i class="ic" style="--n:5" aria-hidden="true"></i><div><h3><span class="ru">Бесконечный режим</span><span class="en">Endless mode</span></h3><p><span class="ru">Держись, сколько сможешь.</span><span class="en">Hold out as long as you can.</span></p></div></div>
+      <div class="mode rv" style="--c:#ffd36b;--dl:.16s"><i class="ic" style="--n:6" aria-hidden="true"></i><div><h3><span class="ru">Ежедневный забег</span><span class="en">Daily run</span></h3><p><span class="ru">Новый вызов каждый день.</span><span class="en">A new challenge every day.</span></p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="features" aria-labelledby="h-feat">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="kick"><span class="ru">Почему Last Orbit</span><span class="en">Why Last Orbit</span></p>
+      <h2 class="h2" id="h-feat"><span class="ru">Коротко о главном</span><span class="en">The short version</span></h2>
+    </div>
+    <div class="feat-grid">
+      <ul class="feats">
+        <li class="feat rv" style="--c:#7ff6ff"><i class="ic" style="--n:0" aria-hidden="true"></i><h3><span class="ru">Пушки стреляют сами</span><span class="en">Guns fire on their own</span></h3><p><span class="ru">Зажми палец и веди Стража: ручной огонь быстрее и сильнее. Отпусти — он сам наводится.</span><span class="en">Hold and drag to steer the Warden: manual fire is faster and stronger. Release and he aims himself.</span></p></li>
+        <li class="feat rv" style="--c:#ffb238;--dl:.06s"><i class="ic" style="--n:1" aria-hidden="true"></i><h3><span class="ru">1 из 3 карт</span><span class="en">Pick 1 of 3 cards</span></h3><p><span class="ru">С каждым уровнем выбирай улучшение и собирай свой билд.</span><span class="en">Every level-up, pick an upgrade and shape your build.</span></p></li>
+        <li class="feat rv" style="--c:#b04dff;--dl:.12s"><i class="ic" style="--n:2" aria-hidden="true"></i><h3><span class="ru">Синергии и эволюции</span><span class="en">Synergies &amp; evolutions</span></h3><p><span class="ru">Пушки усиливают друг друга и эволюционируют.</span><span class="en">Guns combine and evolve.</span></p></li>
+        <li class="feat rv" style="--c:#7ff6ff"><i class="ic" style="--n:7" aria-hidden="true"></i><h3><span class="ru">Одним пальцем</span><span class="en">One finger</span></h3><p><span class="ru">Короткие бои — удобно играть где угодно.</span><span class="en">Quick runs you can play anywhere.</span></p></li>
+        <li class="feat rv" style="--c:#5ad1ff;--dl:.06s"><i class="ic" style="--n:3" aria-hidden="true"></i><h3><span class="ru">Без интернета</span><span class="en">Plays offline</span></h3><p><span class="ru">Играй офлайн. Сеть нужна только для рекламы.</span><span class="en">No connection needed to play; ads need internet.</span></p></li>
+        <li class="feat rv" style="--c:#ffd36b;--dl:.12s"><i class="ic" style="--n:6" aria-hidden="true"></i><h3><span class="ru">Рейтинги и достижения</span><span class="en">Leaderboards &amp; achievements</span></h3><p><span class="ru">Таблицы рекордов и 10 достижений Google Play Games.</span><span class="en">Google Play Games leaderboards and 10 achievements.</span></p></li>
+      </ul>
+      <div class="accent rv">
+        <div class="accent-shot"><div class="phone"><img src="img/shots/ru/04_build.webp" data-src="img/shots/{l}/04_build.webp" width="540" height="960" loading="lazy" decoding="async" alt="Скриншот: выбор одной из трёх карт улучшений" data-alt-ru="Скриншот: выбор одной из трёх карт улучшений" data-alt-en="Screenshot: picking one of three upgrade cards"></div></div>
+        <div class="accent-copy">
+          <i class="ic" style="--n:8;--c:#5aff9b" aria-hidden="true"></i>
+          <h3><span class="ru">Честно бесплатно</span><span class="en">Honestly free</span></h3>
+          <p><span class="ru">Никаких покупок за деньги. Реклама — только между уровнями и по желанию за бонусы, не посреди боя.</span><span class="en">No purchases at all. Ads show only between levels, plus optional rewarded ads for bonuses — never in the middle of a fight.</span></p>
+          <p class="note"><span class="ru">Android 7.0+ · около 48 МБ</span><span class="en">Android 7.0+ · about 48 MB</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec final" id="play" aria-labelledby="h-play">
+  <div class="wrap">
+    <div class="final-copy rv">
+      <p class="kick"><span class="ru">Google Play</span><span class="en">Google Play</span></p>
+      <h2 class="h2" id="h-play"><span class="ru">Удержишь последнюю орбиту?</span><span class="en">Can you hold the last orbit?</span></h2>
+      <div class="cta">
+        <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.onetapgarage.lastorbit" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l15-8.5z"/></svg><span class="ru">Установить из Google Play</span><span class="en">Install on Google Play</span></a>
+        <a class="gp" href="https://play.google.com/store/apps/details?id=com.onetapgarage.lastorbit" rel="noopener"><img class="ru" src="img/gp-ru.png" width="646" height="250" loading="lazy" alt="Доступно в Google Play"><img class="en" src="img/gp-en.png" width="646" height="250" loading="lazy" alt="Get it on Google Play"></a>
+      </div>
+      <p class="note"><span class="ru"><b>Бесплатно</b> · без покупок · реклама между уровнями · играй без интернета · Android 7.0+</span><span class="en"><b>Free</b> · no purchases · ads between levels · plays offline · Android 7.0+</span></p>
+    </div>
+    <div class="menu-phone rv">
+      <div class="menu">
+        <img class="m-bg" src="img/menu-bg.webp" width="720" height="1520" loading="lazy" decoding="async" alt="">
+        <img class="m-boss" src="img/menu-boss.webp" width="720" height="713" loading="lazy" decoding="async" alt="">
+        <i class="beam b1" aria-hidden="true"></i><i class="beam b2" aria-hidden="true"></i><i class="beam b3" aria-hidden="true"></i>
+        <img class="m-base" src="img/menu-base.webp" width="1000" height="445" loading="lazy" decoding="async" alt="">
+        <div class="m-ui">
+          <p class="logo" aria-hidden="true"><span class="l1">LAST</span><span class="l2" data-text="ORBIT">ORBIT</span></p>
+          <p class="tagpill"><span class="ru">Удержи последнюю орбиту</span><span class="en">Hold the last orbit</span></p>
+          <a class="btn-play" href="https://play.google.com/store/apps/details?id=com.onetapgarage.lastorbit" rel="noopener" tabindex="-1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l15-8.5z"/></svg><span class="ru">Играть</span><span class="en">Play</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-brand">
+      <img src="img/icon-256.webp" width="52" height="52" alt="" style="border-radius:13px" loading="lazy">
+      <div><div class="wm">ONETAP GARAGE</div><small><span class="ru">Инди-студия мобильных игр</span><span class="en">Indie mobile games</span></small></div>
+    </div>
+    <nav class="foot-links" aria-label="Links">
+      <a href="../"><span class="ru">Студия</span><span class="en">Studio</span></a>
+      <a href="privacy/"><span class="ru">Политика конфиденциальности</span><span class="en">Privacy policy</span></a>
+      <a href="mailto:onetapgaragestudio@gmail.com">onetapgaragestudio@gmail.com</a>
+    </nav>
+    <p class="legal">© 2026 OneTap Garage. <span class="ru">Google Play и логотип Google Play — товарные знаки Google LLC.</span><span class="en">Google Play and the Google Play logo are trademarks of Google LLC.</span></p>
+  </div>
+</footer>
+<script src="../assets/site.js" defer></script>
+</body>
+</html>
